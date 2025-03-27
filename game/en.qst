@@ -1,0 +1,191 @@
+/*
+The file encoding is UTF-8 without BOM; the newline format is LF
+This file is part of "This Is the House That Jack Built" for UrqW.
+SPDX-License-Identifier: CC0-1.0
+*/
+
+:en0
+perkill
+urqw_game_lang="en"
+urqw_title="This Is the House That Jack Built"
+image="cover.jpg|Classic illustrated cover of the 1878 edition featuring Jack and his family in front of a house"
+pln Cumulative interactive fiction
+pln Developed by Nikita Tseykovets
+pln Illustration by Randolph Caldecott
+next="Next"
+back="Back"
+check="Check"
+insert_msg="Enter a replacement for the "
+last=12
+words=13
+malt="****"
+rat="***"
+cat="***"
+dog="***"
+cow="***"
+horn="****"
+maiden="******"
+man="***"
+priest="******"
+rooster="*******"
+farmer="******"
+horse="*****"
+hound="*****"
+label=urqw_game_lang
+start_label=label + 1
+btn #start_label$, #next$
+end
+
+:en1
+number=1
+pln This is the house that Jack built.
+proc buttons
+end
+
+:en2
+number=2
+pln This is the [[#malt$|insert_var="malt" & goto insert]] that lay in the house that Jack built.
+proc buttons
+end
+
+:en3
+number=3
+pln This is the [[#rat$|insert_var="rat" & goto insert]] that ate the [[#malt$|insert_var="malt" & goto insert]]
+pln That lay in the house that Jack built.
+proc buttons
+end
+
+:en4
+number=4
+pln This is the [[#cat$|insert_var="cat" & goto insert]] that chased the [[#rat$|insert_var="rat" & goto insert]]
+pln That ate the [[#malt$|insert_var="malt" & goto insert]] that lay in the house that Jack built.
+proc buttons
+end
+
+:en5
+number=5
+pln This is the [[#dog$|insert_var="dog" & goto insert]] that worried the [[#cat$|insert_var="cat" & goto insert]]
+pln That chased the [[#rat$|insert_var="rat" & goto insert]] that ate the [[#malt$|insert_var="malt" & goto insert]]
+pln That lay in the house that Jack built.
+proc buttons
+end
+
+:en6
+number=6
+pln This is the [[#cow$|insert_var="cow" & goto insert]] with the crumpled [[#horn$|insert_var="horn" & goto insert]]
+pln That tossed the [[#dog$|insert_var="dog" & goto insert]] that worried the [[#cat$|insert_var="cat" & goto insert]]
+pln That chased the [[#rat$|insert_var="rat" & goto insert]] that ate the [[#malt$|insert_var="malt" & goto insert]]
+pln That lay in the house that Jack built.
+proc buttons
+end
+
+:en7
+number=7
+pln This is the [[#maiden$|insert_var="maiden" & goto insert]] all forlorn
+pln That milked the [[#cow$|insert_var="cow" & goto insert]] with the crumpled [[#horn$|insert_var="horn" & goto insert]]
+pln That tossed the [[#dog$|insert_var="dog" & goto insert]] that worried the [[#cat$|insert_var="cat" & goto insert]]
+pln That chased the [[#rat$|insert_var="rat" & goto insert]] that ate the [[#malt$|insert_var="malt" & goto insert]]
+pln That lay in the house that Jack built.
+proc buttons
+end
+
+:en8
+number=8
+pln This is the [[#man$|insert_var="man" & goto insert]] all tattered and torn
+pln That kissed the [[#maiden$|insert_var="maiden" & goto insert]] all forlorn
+pln That milked the [[#cow$|insert_var="cow" & goto insert]] with the crumpled [[#horn$|insert_var="horn" & goto insert]]
+pln That tossed the [[#dog$|insert_var="dog" & goto insert]] that worried the [[#cat$|insert_var="cat" & goto insert]]
+pln That chased the [[#rat$|insert_var="rat" & goto insert]] that ate the [[#malt$|insert_var="malt" & goto insert]]
+pln That lay in the house that Jack built.
+proc buttons
+end
+
+:en9
+number=9
+pln This is the [[#priest$|insert_var="priest" & goto insert]] all shaven and shorn
+pln That married the [[#man$|insert_var="man" & goto insert]] all tattered and torn
+pln That kissed the [[#maiden$|insert_var="maiden" & goto insert]] all forlorn
+pln That milked the [[#cow$|insert_var="cow" & goto insert]] with the crumpled [[#horn$|insert_var="horn" & goto insert]]
+pln That tossed the [[#dog$|insert_var="dog" & goto insert]] that worried the [[#cat$|insert_var="cat" & goto insert]]
+pln That chased the [[#rat$|insert_var="rat" & goto insert]] that ate the [[#malt$|insert_var="malt" & goto insert]]
+pln That lay in the house that Jack built.
+proc buttons
+end
+
+:en10
+number=10
+pln This is the [[#rooster$|insert_var="rooster" & goto insert]] that crowed in the morn
+pln That woke the [[#priest$|insert_var="priest" & goto insert]] all shaven and shorn
+pln That married the [[#man$|insert_var="man" & goto insert]] all tattered and torn
+pln That kissed the [[#maiden$|insert_var="maiden" & goto insert]] all forlorn
+pln That milked the [[#cow$|insert_var="cow" & goto insert]] with the crumpled [[#horn$|insert_var="horn" & goto insert]]
+pln That tossed the [[#dog$|insert_var="dog" & goto insert]] that worried the [[#cat$|insert_var="cat" & goto insert]]
+pln That chased the [[#rat$|insert_var="rat" & goto insert]] that ate the [[#malt$|insert_var="malt" & goto insert]]
+pln That lay in the house that Jack built.
+proc buttons
+end
+
+:en11
+number=11
+pln This is the [[#farmer$|insert_var="farmer" & goto insert]] sowing his corn
+pln That kept the [[#rooster$|insert_var="rooster" & goto insert]] that crowed in the morn
+pln That woke the [[#priest$|insert_var="priest" & goto insert]] all shaven and shorn
+pln That married the [[#man$|insert_var="man" & goto insert]] all tattered and torn
+pln That kissed the [[#maiden$|insert_var="maiden" & goto insert]] all forlorn
+pln That milked the [[#cow$|insert_var="cow" & goto insert]] with the crumpled [[#horn$|insert_var="horn" & goto insert]]
+pln That tossed the [[#dog$|insert_var="dog" & goto insert]] that worried the [[#cat$|insert_var="cat" & goto insert]]
+pln That chased the [[#rat$|insert_var="rat" & goto insert]] that ate the [[#malt$|insert_var="malt" & goto insert]]
+pln That lay in the house that Jack built.
+proc buttons
+end
+
+:en12
+number=12
+pln This is the [[#horse$|insert_var="horse" & goto insert]] and the [[#hound$|insert_var="hound" & goto insert]] and the [[#horn$|insert_var="horn" & goto insert]]
+pln That belonged to the [[#farmer$|insert_var="farmer" & goto insert]] sowing his corn
+pln That kept the [[#rooster$|insert_var="rooster" & goto insert]] that crowed in the morn
+pln That woke the [[#priest$|insert_var="priest" & goto insert]] all shaven and shorn
+pln That married the [[#man$|insert_var="man" & goto insert]] all tattered and torn
+pln That kissed the [[#maiden$|insert_var="maiden" & goto insert]] all forlorn
+pln That milked the [[#cow$|insert_var="cow" & goto insert]] with the crumpled [[#horn$|insert_var="horn" & goto insert]]
+pln That tossed the [[#dog$|insert_var="dog" & goto insert]] that worried the [[#cat$|insert_var="cat" & goto insert]]
+pln That chased the [[#rat$|insert_var="rat" & goto insert]] that ate the [[#malt$|insert_var="malt" & goto insert]]
+pln That lay in the house that Jack built.
+proc buttons
+end
+
+:en_check
+correct = 0
+javascript="'" + malt + "'.toLowerCase();"
+if javascript = "malt" or javascript = "cheese" then correct = correct + 1
+javascript="'" + rat + "'.toLowerCase();"
+if javascript = "rat" then correct = correct + 1
+javascript="'" + cat + "'.toLowerCase();"
+if javascript = "cat" then correct = correct + 1
+javascript="'" + dog + "'.toLowerCase();"
+if javascript = "dog" then correct = correct + 1
+javascript="'" + cow + "'.toLowerCase();"
+if javascript = "cow" then correct = correct + 1
+javascript="'" + horn + "'.toLowerCase();"
+if javascript = "horn" then correct = correct + 1
+javascript="'" + maiden + "'.toLowerCase();"
+if javascript = "maiden" then correct = correct + 1
+javascript="'" + man + "'.toLowerCase();"
+if javascript = "man" then correct = correct + 1
+javascript="'" + priest + "'.toLowerCase();"
+if javascript = "priest" or javascript = "judge" then correct = correct + 1
+javascript="'" + rooster + "'.toLowerCase();"
+if javascript = "rooster" or javascript = "cock" then correct = correct + 1
+javascript="'" + farmer + "'.toLowerCase();"
+if javascript = "farmer" then correct = correct + 1
+javascript="'" + horse + "'.toLowerCase();"
+if javascript = "horse" then correct = correct + 1
+javascript="'" + hound + "'.toLowerCase();"
+if javascript = "hound" then correct = correct + 1
+if correct = words then pln That's right. It's a victory! & quit
+if correct = 0 then pln You have 0 correct options. This is a failure!
+if correct > 0 then javascript="window.percentageRatio(" + correct + ", " + words + ");"
+if correct > 0 then pln You have #javascript$% correct options. You still need to work!
+current_label=label + number
+btn #current_label$, Continue
+end

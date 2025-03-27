@@ -1,0 +1,172 @@
+/*
+The file encoding is UTF-8 without BOM; the newline format is LF
+This file is part of "This Is the House That Jack Built" for UrqW.
+SPDX-License-Identifier: CC0-1.0
+*/
+
+:ru0
+perkill
+urqw_game_lang="ru"
+urqw_title="Дом, который построил Джек"
+image="cover.jpg|Классическая иллюстрированная обложка издания 1878 года с изображением Джека с семьёй на фоне дома"
+pln Кумулятивная интерактивная литература
+pln Разработка: Никита Цейковец
+pln Иллюстрация: Рэндольф Кальдекотт 
+pln Перевод с английского: Самуил Маршак
+next="Далее"
+back="Назад"
+check="Проверить"
+insert_msg="Введите замену для "
+last=9
+words=10
+пшениц="******"
+чулане="******"
+синиц="*****"
+кот="***"
+пёс="***"
+коров="*****"
+пса="***"
+старушк="*******"
+пастух="******"
+петуха="******"
+label=urqw_game_lang
+start_label=label + 1
+btn #start_label$, #next$
+end
+
+:ru1
+number=1
+pln Вот дом,
+pln Который построил Джек.
+proc buttons
+end
+
+:ru2
+number=2
+pln А это [[#пшениц$|insert_var="пшениц" & goto insert]]а,
+pln Которая в тёмном [[#чулане$|insert_var="чулане" & goto insert]] хранится
+pln В доме,
+pln Который построил Джек.
+proc buttons
+end
+
+:ru3
+number=3
+pln А это весёлая птица-[[#синиц$|insert_var="синиц" & goto insert]]а,
+pln Которая часто ворует [[#пшениц$|insert_var="пшениц" & goto insert]]у,
+pln Которая в тёмном [[#чулане$|insert_var="чулане" & goto insert]] хранится
+pln В доме,
+pln Который построил Джек.
+proc buttons
+end
+
+:ru4
+number=4
+pln Вот [[#кот$|insert_var="кот" & goto insert]],
+pln Который пугает и ловит [[#синиц$|insert_var="синиц" & goto insert]]у,
+pln Которая часто ворует [[#пшениц$|insert_var="пшениц" & goto insert]]у,
+pln Которая в тёмном [[#чулане$|insert_var="чулане" & goto insert]] хранится
+pln В доме,
+pln Который построил Джек.
+proc buttons
+end
+
+:ru5
+number=5
+pln Вот [[#пёс$|insert_var="пёс" & goto insert]] без хвоста,
+pln Который за шиворот треплет [[#кот$|insert_var="кот" & goto insert]]а,
+pln Который пугает и ловит [[#синиц$|insert_var="синиц" & goto insert]]у,
+pln Которая часто ворует [[#пшениц$|insert_var="пшениц" & goto insert]]у,
+pln Которая в тёмном [[#чулане$|insert_var="чулане" & goto insert]] хранится
+pln В доме,
+pln Который построил Джек.
+proc buttons
+end
+
+:ru6
+number=6
+pln А это [[#коров$|insert_var="коров" & goto insert]]а безрогая,
+pln Лягнувшая старого [[#пса$|insert_var="пса" & goto insert]] без хвоста,
+pln Который за шиворот треплет [[#кот$|insert_var="кот" & goto insert]]а,
+pln Который пугает и ловит [[#синиц$|insert_var="синиц" & goto insert]]у,
+pln Которая часто ворует [[#пшениц$|insert_var="пшениц" & goto insert]]у,
+pln Которая в тёмном [[#чулане$|insert_var="чулане" & goto insert]] хранится
+pln В доме,
+pln Который построил Джек.
+proc buttons
+end
+
+:ru7
+number=7
+pln А это [[#старушк$|insert_var="старушк" & goto insert]]а, седая и строгая,
+pln Которая доит [[#коров$|insert_var="коров" & goto insert]]у безрогую,
+pln Лягнувшую старого [[#пса$|insert_var="пса" & goto insert]] без хвоста,
+pln Который за шиворот треплет [[#кот$|insert_var="кот" & goto insert]]а,
+pln Который пугает и ловит [[#синиц$|insert_var="синиц" & goto insert]]у,
+pln Которая часто ворует [[#пшениц$|insert_var="пшениц" & goto insert]]у,
+pln Которая в тёмном [[#чулане$|insert_var="чулане" & goto insert]] хранится
+pln В доме,
+pln Который построил Джек.
+proc buttons
+end
+
+:ru8
+number=8
+pln А это ленивый и толстый [[#пастух$|insert_var="пастух" & goto insert]],
+pln Который бранится с [[#старушк$|insert_var="старушк" & goto insert]]ою строгою,
+pln Которая доит [[#коров$|insert_var="коров" & goto insert]]у безрогую,
+pln Лягнувшую старого [[#пса$|insert_var="пса" & goto insert]] без хвоста,
+pln Который за шиворот треплет [[#кот$|insert_var="кот" & goto insert]]а,
+pln Который пугает и ловит [[#синиц$|insert_var="синиц" & goto insert]]у,
+pln Которая часто ворует [[#пшениц$|insert_var="пшениц" & goto insert]]у,
+pln Которая в тёмном [[#чулане$|insert_var="чулане" & goto insert]] хранится
+pln В доме,
+pln Который построил Джек.
+proc buttons
+end
+
+:ru9
+number=9
+pln Вот два [[#петуха$|insert_var="петуха" & goto insert]],
+pln Которые будят того [[#пастух$|insert_var="пастух" & goto insert]]а,
+pln Который бранится с [[#старушк$|insert_var="старушк" & goto insert]]ою строгою,
+pln Которая доит [[#коров$|insert_var="коров" & goto insert]]у безрогую,
+pln Лягнувшую старого [[#пса$|insert_var="пса" & goto insert]] без хвоста,
+pln Который за шиворот треплет [[#кот$|insert_var="кот" & goto insert]]а,
+pln Который пугает и ловит [[#синиц$|insert_var="синиц" & goto insert]]у,
+pln Которая часто ворует [[#пшениц$|insert_var="пшениц" & goto insert]]у,
+pln Которая в тёмном [[#чулане$|insert_var="чулане" & goto insert]] хранится
+pln В доме,
+pln Который построил Джек.
+proc buttons
+end
+
+:ru_check
+correct=0
+javascript="'" + пшениц + "'.toLowerCase();"
+if javascript = "пшениц" then correct = correct + 1
+javascript="'" + чулане + "'.toLowerCase();"
+if javascript = "чулане" then correct = correct + 1
+javascript="'" + синиц + "'.toLowerCase();"
+if javascript = "синиц" then correct = correct + 1
+javascript="'" + кот + "'.toLowerCase();"
+if javascript = "кот" then correct = correct + 1
+javascript="'" + пёс + "'.toLowerCase();"
+if javascript = "пёс" or javascript = "пес" then correct = correct + 1
+javascript="'" + коров + "'.toLowerCase();"
+if javascript = "коров" then correct = correct + 1
+javascript="'" + пса + "'.toLowerCase();"
+if javascript = "пса" then correct = correct + 1
+javascript="'" + старушк + "'.toLowerCase();"
+if javascript = "старушк" then correct = correct + 1
+javascript="'" + пастух + "'.toLowerCase();"
+if javascript = "пастух" then correct = correct + 1
+javascript="'" + петуха + "'.toLowerCase();"
+if javascript = "петуха" then correct = correct + 1
+if correct = words then pln Всё верно. Это победа! & quit
+if correct = 0 then pln У вас 0 правильных вариантов. Это провал!
+if correct > 0 then javascript="window.percentageRatio(" + correct + ", " + words + ");"
+if correct > 0 then pln У вас #javascript$% правильных вариантов. Надо ещё поработать!
+current_label=label + number
+btn #current_label$, Продолжить
+end

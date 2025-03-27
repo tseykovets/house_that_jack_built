@@ -1,0 +1,33 @@
+/*
+The file encoding is UTF-8 without BOM; the newline format is LF
+This file is part of "This Is the House That Jack Built" for UrqW.
+SPDX-License-Identifier: CC0-1.0
+*/
+
+:main
+image="cover.jpg|Cover of This Is the House That Jack Built"
+btn en0, English (<span lang="en">English</span>)
+btn ru0, Russian (<span lang="ru">Русский</span>)
+end
+
+:buttons
+if check_show <> 1 and number = last then check_show=1
+if check_show = 1 then btn check, #check$
+next_label=label + (number + 1)
+back_label=label + (number - 1)
+if number < last then btn #next_label$, #next$
+if number > 1 then btn #back_label$, #back$
+end
+
+:insert
+cls
+pln #insert_msg$ #(#insert_var$)$:
+input insert_val
+cls
+#insert_var$="#insert_val$"
+current_label=label + number
+goto #current_label$
+
+:check
+check_label=label + "_check"
+goto #check_label$
