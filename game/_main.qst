@@ -8,6 +8,7 @@ SPDX-License-Identifier: CC0-1.0
 image="cover.jpg|Cover of This Is the House That Jack Built"
 btn en0, English (<span lang="en">English</span>)
 btn ru0, Russian (<span lang="ru">Русский</span>)
+btn uk0, Ukrainian (<span lang="uk">українська</span>)
 end
 
 :buttons

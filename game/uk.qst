@@ -1,0 +1,167 @@
+/*
+The file encoding is UTF-8 without BOM; the newline format is LF
+This file is part of "This Is the House That Jack Built" for UrqW.
+SPDX-License-Identifier: CC0-1.0
+*/
+
+:uk0
+perkill
+urqw_game_lang="uk"
+urqw_title="Хатка, яку збудував собі Джек"
+image="cover.jpg|Класична ілюстрована обкладинка видання 1878 року із зображенням Джека із сім'єю на тлі хатки"
+pln Кумулятивна інтерактивна література
+pln Розробка: Никита Цейковец
+pln Ілюстрація: Рендольф Кальдекотт
+pln Переклад: Іва́н Малко́вич та Ю́рій Андрухо́вич
+next="Далі"
+back="Назад"
+check="Перевірити"
+insert_msg="Введіть заміну "
+last=8
+words=12
+комор="*****"
+пшениц="******"
+синиц="*****"
+паляниц="*******"
+кіт="***"
+пес="***"
+кота="****"
+корова="******"
+пса="***"
+бабуся="******"
+пастух="******"
+блоху="*****"
+label=urqw_game_lang
+start_label=label + 1
+btn #start_label$, #next$
+end
+
+:uk1
+number=1
+pln Це хатка, яку збудував собі Джек.
+pln Це сад і город,
+pln а це - сонях, як сонце,
+pln Який заглядає до Джека в віконце,
+pln до хатки, яку збудував собі Джек...
+proc buttons
+end
+
+:uk2
+number=2
+pln А це ось [[#комор$|insert_var="комор" & goto insert]]а.
+pln В [[#комор$|insert_var="комор" & goto insert]]і - [[#пшениц$|insert_var="пшениц" & goto insert]]я,
+pln яку викрадає хитрюща [[#синиц$|insert_var="синиц" & goto insert]]я,
+pln і вже не печеться смачна [[#паляниц$|insert_var="паляниц" & goto insert]]я
+pln у хатці, яку збудував собі Джек.
+proc buttons
+end
+
+:uk3
+number=3
+pln Це [[#кіт$|insert_var="кіт" & goto insert]]. Він сміливо виходить з воріт,
+pln і дуже він хоче зловити [[#синиц$|insert_var="синиц" & goto insert]]ю,
+pln яка викрадає з [[#комор$|insert_var="комор" & goto insert]]и [[#пшениц$|insert_var="пшениц" & goto insert]]ю,
+pln з якої так смачно пекти [[#паляниц$|insert_var="паляниц" & goto insert]]ю
+pln у хатці, яку збудував собі Джек.
+proc buttons
+end
+
+:uk4
+number=4
+pln А це - [[#пес$|insert_var="пес" & goto insert]] без хвоста,
+pln який каже "гав" на сміливця-[[#кота$|insert_var="кота" & goto insert]],
+pln який дуже хоче спіймати [[#синиц$|insert_var="синиц" & goto insert]]ю,
+pln яка викрадає з [[#комор$|insert_var="комор" & goto insert]]и [[#пшениц$|insert_var="пшениц" & goto insert]]ю,
+pln з якої так смачно пекти [[#паляниц$|insert_var="паляниц" & goto insert]]ю
+pln у хатці, яку збудував собі Джек.
+proc buttons
+end
+
+:uk5
+number=5
+pln А це в нас [[#корова$|insert_var="корова" & goto insert]] ряба і рогата,
+pln яка щойно хвицнула [[#пса$|insert_var="пса" & goto insert]] без хвоста,
+pln який каже "гав" на сміливця-[[#кота$|insert_var="кота" & goto insert]],
+pln який доганяє [[#синиц$|insert_var="синиц" & goto insert]]ю,
+pln яка викрадає [[#пшениц$|insert_var="пшениц" & goto insert]]ю,
+pln з якої так смачно пекти [[#паляниц$|insert_var="паляниц" & goto insert]]ю
+pln у хатці, яку збудував собі Джек.
+proc buttons
+end
+
+:uk6
+number=6
+pln А це ось [[#бабуся$|insert_var="бабуся" & goto insert]] старенька, горбата,
+pln яку дуже любить [[#корова$|insert_var="корова" & goto insert]] рогата,
+pln яка щойно хвицнула [[#пса$|insert_var="пса" & goto insert]] без хвоста,
+pln який каже "гав" на сміливця-[[#кота$|insert_var="кота" & goto insert]],
+pln який доганяє [[#синиц$|insert_var="синиц" & goto insert]]ю,
+pln яка викрадає [[#пшениц$|insert_var="пшениц" & goto insert]]ю,
+pln з якої так смачно пекти [[#паляниц$|insert_var="паляниц" & goto insert]]ю
+pln у хатці, яку збудував собі Джек.
+proc buttons
+end
+
+:uk7
+number=7
+pln А це що за сплюх? Це, звичайно, [[#пастух$|insert_var="пастух" & goto insert]],
+pln якого картає [[#бабуся$|insert_var="бабуся" & goto insert]] горбата,
+pln яку дуже любить [[#корова$|insert_var="корова" & goto insert]] рогата,
+pln яка щойно хвицнула [[#пса$|insert_var="пса" & goto insert]] без хвоста,
+pln який каже "гав" на сміливця-[[#кота$|insert_var="кота" & goto insert]],
+pln який доганяє [[#синиц$|insert_var="синиц" & goto insert]]ю,
+pln яка викрадає [[#пшениц$|insert_var="пшениц" & goto insert]]ю,
+pln з якої так смачно пекти [[#паляниц$|insert_var="паляниц" & goto insert]]ю
+pln у хатці, яку збудував собі Джек.
+proc buttons
+end
+
+:uk8
+number=8
+pln А зараз поглянемо всі на [[#блоху$|insert_var="блоху" & goto insert]],
+pln що робить кусь-кусь [[#пастух$|insert_var="пастух" & goto insert]]ові-сплюху,
+pln якого картає [[#бабуся$|insert_var="бабуся" & goto insert]] горбата,
+pln яку дуже любить [[#корова$|insert_var="корова" & goto insert]] рогата,
+pln яка щойно хвицнула [[#пса$|insert_var="пса" & goto insert]] без хвоста,
+pln який каже "гав" на сміливця-[[#кота$|insert_var="кота" & goto insert]],
+pln який доганяє [[#синиц$|insert_var="синиц" & goto insert]]ю,
+pln яка викрадає [[#пшениц$|insert_var="пшениц" & goto insert]]ю, -
+pln щоб діткам спекти
+pln о-о-таку [[#паляниц$|insert_var="паляниц" & goto insert]]ю
+pln у хатці, яку збудував собі Джек.
+proc buttons
+end
+
+:uk_check
+correct=0
+javascript="'" + комор + "'.toLowerCase();"
+if javascript = "комор" then correct = correct + 1
+javascript="'" + пшениц + "'.toLowerCase();"
+if javascript = "пшениц" then correct = correct + 1
+javascript="'" + синиц + "'.toLowerCase();"
+if javascript = "синиц" then correct = correct + 1
+javascript="'" + паляниц + "'.toLowerCase();"
+if javascript = "паляниц" then correct = correct + 1
+javascript="'" + кіт + "'.toLowerCase();"
+if javascript = "кіт" or javascript = "кiт" then correct = correct + 1
+javascript="'" + пес + "'.toLowerCase();"
+if javascript = "пес" then correct = correct + 1
+javascript="'" + кота + "'.toLowerCase();"
+if javascript = "кота" then correct = correct + 1
+javascript="'" + корова + "'.toLowerCase();"
+if javascript = "корова" then correct = correct + 1
+javascript="'" + пса + "'.toLowerCase();"
+if javascript = "пса" then correct = correct + 1
+javascript="'" + бабуся + "'.toLowerCase();"
+if javascript = "бабуся" then correct = correct + 1
+javascript="'" + пастух + "'.toLowerCase();"
+if javascript = "пастух" then correct = correct + 1
+javascript="'" + блоху + "'.toLowerCase();"
+if javascript = "блоху" then correct = correct + 1
+if correct = words then pln Все правильно. Це перемога! & quit
+if correct = 0 then pln У вас є 0 правильних варіантів. Це провал!
+if correct > 0 then javascript="window.percentageRatio(" + correct + ", " + words + ");"
+if correct > 0 then pln У вас є #javascript$% правильних варіантів. Потрібно ще попрацювати!
+current_label=label + number
+btn #current_label$, Продовжити
+end
