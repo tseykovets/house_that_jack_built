@@ -1,0 +1,215 @@
+/*
+The file encoding is UTF-8 without BOM; the newline format is LF
+This file is part of "This Is the House That Jack Built" for UrqW.
+SPDX-License-Identifier: CC0-1.0
+*/
+
+:ru_v2_0
+perkill
+urqw_game_lang="ru"
+urqw_title="Это - тот дом, где Джэк жил"
+image="cover.jpg|Классическая иллюстрированная обложка издания 1878 года с изображением Джека с семьёй на фоне дома"
+pln Кумулятивная интерактивная литература
+pln Разработка: Никита Цейковец
+pln Иллюстрация: Рэндольф Кальдекотт 
+pln Перевод с английского: Геннадий Аминов
+next="Далее"
+back="Назад"
+check="Проверить"
+insert_msg="Введите замену для "
+last=12
+words=14
+зерно="*****"
+крыс="****"
+кот="***"
+пёс="***"
+коров="*****"
+пса="***"
+девиц="*****"
+мужчин="******"
+поп="***"
+петух="*****"
+крестьянин="**********"
+цыплята="*******"
+овечки="******"
+бараны="******"
+label=urqw_game_lang + "_v2_"
+start_label=label + 1
+btn #start_label$, #next$
+end
+
+:ru_v2_1
+number=1
+pln Это - тот дом, где Джэк жил.
+proc buttons
+end
+
+:ru_v2_2
+number=2
+pln Это - [[#зерно$|insert_var="зерно" & goto insert]], что лежало давно
+pln В доме, где Джэк жил.
+proc buttons
+end
+
+:ru_v2_3
+number=3
+pln Это - та [[#крыс$|insert_var="крыс" & goto insert]]а, что ела [[#зерно$|insert_var="зерно" & goto insert]],
+pln Что лежало давно
+pln В доме, где Джэк жил.
+proc buttons
+end
+
+:ru_v2_4
+number=4
+pln Это - тот [[#кот$|insert_var="кот" & goto insert]], что выгнал всех [[#крыс$|insert_var="крыс" & goto insert]],
+pln Что ели [[#зерно$|insert_var="зерно" & goto insert]],
+pln Что лежало давно
+pln В доме, где Джэк жил.
+proc buttons
+end
+
+:ru_v2_5
+number=5
+pln Это - тот [[#пёс$|insert_var="пёс" & goto insert]], что облаял [[#кот$|insert_var="кот" & goto insert]]а,
+pln Что выгнал всех [[#крыс$|insert_var="крыс" & goto insert]],
+pln Что ели [[#зерно$|insert_var="зерно" & goto insert]],
+pln Что лежало давно
+pln В доме, где Джэк жил.
+proc buttons
+end
+
+:ru_v2_6
+number=6
+pln Это - [[#коров$|insert_var="коров" & goto insert]]а, лягнувшая [[#пса$|insert_var="пса" & goto insert]],
+pln Что облаял [[#кот$|insert_var="кот" & goto insert]]а,
+pln Что выгнал всех [[#крыс$|insert_var="крыс" & goto insert]],
+pln Что ели [[#зерно$|insert_var="зерно" & goto insert]],
+pln Что лежало давно
+pln В доме, где Джэк жил.
+proc buttons
+end
+
+:ru_v2_7
+number=7
+pln Это - [[#девиц$|insert_var="девиц" & goto insert]]а, худая, как спица,
+pln Что доит [[#коров$|insert_var="коров" & goto insert]]у, лягнувшую [[#пса$|insert_var="пса" & goto insert]],
+pln Что облаял [[#кот$|insert_var="кот" & goto insert]]а,
+pln Что выгнал всех [[#крыс$|insert_var="крыс" & goto insert]],
+pln Что ели [[#зерно$|insert_var="зерно" & goto insert]],
+pln Что лежало давно
+pln В доме, где Джэк жил.
+proc buttons
+end
+
+:ru_v2_8
+number=8
+pln Это - [[#мужчин$|insert_var="мужчин" & goto insert]]а с трёхдневной щетиной,
+pln Что чмокнул [[#девиц$|insert_var="девиц" & goto insert]]у, худую, как спица,
+pln Что доит [[#коров$|insert_var="коров" & goto insert]]у, лягнувшую [[#пса$|insert_var="пса" & goto insert]],
+pln Что облаял [[#кот$|insert_var="кот" & goto insert]]а,
+pln Что выгнал всех [[#крыс$|insert_var="крыс" & goto insert]],
+pln Что ели [[#зерно$|insert_var="зерно" & goto insert]],
+pln Что лежало давно
+pln В доме, где Джэк жил.
+proc buttons
+end
+
+:ru_v2_9
+number=9
+pln Это - злой [[#поп$|insert_var="поп" & goto insert]], румяный, как клоп,
+pln Женивший [[#мужчин$|insert_var="мужчин" & goto insert]]у с трёхдневной щетиной,
+pln Что чмокнул [[#девиц$|insert_var="девиц" & goto insert]]у, худую, как спица,
+pln Что доит [[#коров$|insert_var="коров" & goto insert]]у, лягнувшую [[#пса$|insert_var="пса" & goto insert]],
+pln Что облаял [[#кот$|insert_var="кот" & goto insert]]а,
+pln Что выгнал всех [[#крыс$|insert_var="крыс" & goto insert]],
+pln Что ели [[#зерно$|insert_var="зерно" & goto insert]],
+pln Что лежало давно
+pln В доме, где Джэк жил.
+proc buttons
+end
+
+:ru_v2_10
+number=10
+pln Это - [[#петух$|insert_var="петух" & goto insert]], часто евший за двух,
+pln Так же, как [[#поп$|insert_var="поп" & goto insert]], румяный, как клоп,
+pln Женивший [[#мужчин$|insert_var="мужчин" & goto insert]]у с трёхдневной щетиной,
+pln Что чмокнул [[#девиц$|insert_var="девиц" & goto insert]]у, худую, как спица,
+pln Что доит [[#коров$|insert_var="коров" & goto insert]]у, лягнувшую [[#пса$|insert_var="пса" & goto insert]],
+pln Что облаял [[#кот$|insert_var="кот" & goto insert]]а,
+pln Что выгнал всех [[#крыс$|insert_var="крыс" & goto insert]],
+pln Что ели [[#зерно$|insert_var="зерно" & goto insert]],
+pln Что лежало давно
+pln В доме, где Джэк жил.
+proc buttons
+end
+
+:ru_v2_11
+number=11
+pln Это - [[#крестьянин$|insert_var="крестьянин" & goto insert]] с походкою странной,
+pln У кого жил [[#петух$|insert_var="петух" & goto insert]], часто евший за двух,
+pln Так же, как [[#поп$|insert_var="поп" & goto insert]], румяный, как клоп,
+pln Женивший [[#мужчин$|insert_var="мужчин" & goto insert]]у с трёхдневной щетиной,
+pln Что чмокнул [[#девиц$|insert_var="девиц" & goto insert]]у, худую, как спица,
+pln Что доит [[#коров$|insert_var="коров" & goto insert]]у, лягнувшую [[#пса$|insert_var="пса" & goto insert]],
+pln Что облаял [[#кот$|insert_var="кот" & goto insert]]а,
+pln Что выгнал всех [[#крыс$|insert_var="крыс" & goto insert]],
+pln Что ели [[#зерно$|insert_var="зерно" & goto insert]],
+pln Что лежало давно
+pln В доме, где Джэк жил.
+proc buttons
+end
+
+:ru_v2_12
+number=12
+pln Это - [[#цыплята$|insert_var="цыплята" & goto insert]], [[#овечки$|insert_var="овечки" & goto insert]], [[#бараны$|insert_var="бараны" & goto insert]],
+pln Что держит [[#крестьянин$|insert_var="крестьянин" & goto insert]] с походкою странной,
+pln У кого жил [[#петух$|insert_var="петух" & goto insert]], часто евший за двух,
+pln Так же, как [[#поп$|insert_var="поп" & goto insert]], румяный, как клоп,
+pln Женивший [[#мужчин$|insert_var="мужчин" & goto insert]]у с трёхдневной щетиной,
+pln Что чмокнул [[#девиц$|insert_var="девиц" & goto insert]]у, худую, как спица,
+pln Что доит [[#коров$|insert_var="коров" & goto insert]]у, лягнувшую [[#пса$|insert_var="пса" & goto insert]],
+pln Что облаял [[#кот$|insert_var="кот" & goto insert]]а,
+pln Что выгнал всех [[#крыс$|insert_var="крыс" & goto insert]],
+pln Что ели [[#зерно$|insert_var="зерно" & goto insert]],
+pln Что лежало давно
+pln В доме, где Джэк жил.
+proc buttons
+end
+
+:ru_v2__check
+correct=0
+javascript="'" + зерно + "'.toLowerCase();"
+if javascript = "зерно" then correct = correct + 1
+javascript="'" + крыс + "'.toLowerCase();"
+if javascript = "крыс" then correct = correct + 1
+javascript="'" + кот + "'.toLowerCase();"
+if javascript = "кот" then correct = correct + 1
+javascript="'" + пёс + "'.toLowerCase();"
+if javascript = "пёс" or javascript = "пес" then correct = correct + 1
+javascript="'" + коров + "'.toLowerCase();"
+if javascript = "коров" then correct = correct + 1
+javascript="'" + пса + "'.toLowerCase();"
+if javascript = "пса" then correct = correct + 1
+javascript="'" + девиц + "'.toLowerCase();"
+if javascript = "девиц" then correct = correct + 1
+javascript="'" + мужчин + "'.toLowerCase();"
+if javascript = "мужчин" then correct = correct + 1
+javascript="'" + поп + "'.toLowerCase();"
+if javascript = "поп" then correct = correct + 1
+javascript="'" + петух + "'.toLowerCase();"
+if javascript = "петух" then correct = correct + 1
+javascript="'" + крестьянин + "'.toLowerCase();"
+if javascript = "крестьянин" then correct = correct + 1
+javascript="'" + цыплята + "'.toLowerCase();"
+if javascript = "цыплята" or javascript = "цыплятки" then correct = correct + 1
+javascript="'" + овечки + "'.toLowerCase();"
+if javascript = "овечки" or javascript = "овцы" then correct = correct + 1
+javascript="'" + бараны + "'.toLowerCase();"
+if javascript = "бараны" or javascript = "барашки" then correct = correct + 1
+if correct = words then pln Всё верно. Это победа! & quit
+if correct = 0 then pln У вас 0 правильных вариантов. Это провал!
+if correct > 0 then javascript="window.percentageRatio(" + correct + ", " + words + ");"
+if correct > 0 then pln У вас #javascript$% правильных вариантов. Надо ещё поработать!
+current_label=label + number
+btn #current_label$, Продолжить
+end

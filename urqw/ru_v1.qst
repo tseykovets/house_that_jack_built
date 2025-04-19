@@ -4,7 +4,7 @@ This file is part of "This Is the House That Jack Built" for UrqW.
 SPDX-License-Identifier: CC0-1.0
 */
 
-:ru0
+:ru_v1_0
 perkill
 urqw_game_lang="ru"
 urqw_title="Дом, который построил Джек"
@@ -29,19 +29,19 @@ words=10
 старушк="*******"
 пастух="******"
 петуха="******"
-label=urqw_game_lang
+label=urqw_game_lang + "_v1_"
 start_label=label + 1
 btn #start_label$, #next$
 end
 
-:ru1
+:ru_v1_1
 number=1
 pln Вот дом,
 pln Который построил Джек.
 proc buttons
 end
 
-:ru2
+:ru_v1_2
 number=2
 pln А это [[#пшениц$|insert_var="пшениц" & goto insert]]а,
 pln Которая в тёмном [[#чулане$|insert_var="чулане" & goto insert]] хранится
@@ -50,7 +50,7 @@ pln Который построил Джек.
 proc buttons
 end
 
-:ru3
+:ru_v1_3
 number=3
 pln А это весёлая птица-[[#синиц$|insert_var="синиц" & goto insert]]а,
 pln Которая часто ворует [[#пшениц$|insert_var="пшениц" & goto insert]]у,
@@ -60,7 +60,7 @@ pln Который построил Джек.
 proc buttons
 end
 
-:ru4
+:ru_v1_4
 number=4
 pln Вот [[#кот$|insert_var="кот" & goto insert]],
 pln Который пугает и ловит [[#синиц$|insert_var="синиц" & goto insert]]у,
@@ -71,7 +71,7 @@ pln Который построил Джек.
 proc buttons
 end
 
-:ru5
+:ru_v1_5
 number=5
 pln Вот [[#пёс$|insert_var="пёс" & goto insert]] без хвоста,
 pln Который за шиворот треплет [[#кот$|insert_var="кот" & goto insert]]а,
@@ -83,7 +83,7 @@ pln Который построил Джек.
 proc buttons
 end
 
-:ru6
+:ru_v1_6
 number=6
 pln А это [[#коров$|insert_var="коров" & goto insert]]а безрогая,
 pln Лягнувшая старого [[#пса$|insert_var="пса" & goto insert]] без хвоста,
@@ -96,7 +96,7 @@ pln Который построил Джек.
 proc buttons
 end
 
-:ru7
+:ru_v1_7
 number=7
 pln А это [[#старушк$|insert_var="старушк" & goto insert]]а, седая и строгая,
 pln Которая доит [[#коров$|insert_var="коров" & goto insert]]у безрогую,
@@ -110,7 +110,7 @@ pln Который построил Джек.
 proc buttons
 end
 
-:ru8
+:ru_v1_8
 number=8
 pln А это ленивый и толстый [[#пастух$|insert_var="пастух" & goto insert]],
 pln Который бранится с [[#старушк$|insert_var="старушк" & goto insert]]ою строгою,
@@ -125,7 +125,7 @@ pln Который построил Джек.
 proc buttons
 end
 
-:ru9
+:ru_v1_9
 number=9
 pln Вот два [[#петуха$|insert_var="петуха" & goto insert]],
 pln Которые будят того [[#пастух$|insert_var="пастух" & goto insert]]а,
@@ -141,7 +141,7 @@ pln Который построил Джек.
 proc buttons
 end
 
-:ru_check
+:ru_v1__check
 correct=0
 javascript="'" + пшениц + "'.toLowerCase();"
 if javascript = "пшениц" then correct = correct + 1
