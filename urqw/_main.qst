@@ -7,7 +7,8 @@ SPDX-License-Identifier: CC0-1.0
 :main
 image="cover.jpg|Cover of This Is the House That Jack Built"
 btn en0, English, original
-btn ru_v1_0, Russian (<span lang="ru">Русский</span>), translated by Samuil Marshak
+btn ru_v0_0, Russian (<span lang="ru">Русский</span>), translated by Samuil Marshak (1923)
+btn ru_v1_0, Russian (<span lang="ru">Русский</span>), translated by Samuil Marshak (1936)
 btn ru_v2_0, Russian (<span lang="ru">Русский</span>), translated by Gennady Aminov
 btn ru_v3_0, Russian (<span lang="ru">Русский</span>), translated by Igor Rodin
 btn ru_v4_0, Russian (<span lang="ru">Русский</span>), translated by Svetlana Sergeeva
