@@ -1,0 +1,121 @@
+/*
+The file encoding is UTF-8 without BOM; the newline format is LF
+This file is part of "This Is the House That Jack Built" for UrqW.
+SPDX-License-Identifier: CC0-1.0
+*/
+
+:ru_v4_0
+perkill
+urqw_game_lang="ru"
+urqw_title="Дом, который построил Джек"
+image="cover.jpg|Классическая иллюстрированная обложка издания 1878 года с изображением Джека с семьёй на фоне дома"
+pln Кумулятивная интерактивная литература
+pln Разработка: Никита Цейковец
+pln Иллюстрация: Рэндольф Кальдекотт 
+pln Перевод: Светлана Сергеева
+next="Далее"
+back="Назад"
+check="Проверить"
+insert_msg="Введите замену для "
+last=6
+words=6
+пшениц="******"
+крыс="****"
+кот="***"
+собак="*****"
+коров="*****"
+леди="****"
+label=urqw_game_lang + "_v4_"
+start_label=label + 1
+btn #start_label$, #next$
+end
+
+:ru_v4_1
+number=1
+pln Этот дом построил Джек -
+pln Крыша, стены, фундамент-гранит,
+pln Стоять дому не один век.
+pln Джек в доме [[#пшениц$|insert_var="пшениц" & goto insert]]у хранит.
+proc buttons
+end
+
+:ru_v4_2
+number=2
+pln Но в доме есть [[#крыс$|insert_var="крыс" & goto insert]]а искусная,
+pln Ей нравится есть [[#пшениц$|insert_var="пшениц" & goto insert]]у.
+pln У Джека в доме не сохранится
+pln [[#пшениц$|insert_var="пшениц" & goto insert]]а уж очень вкусная.
+proc buttons
+end
+
+:ru_v4_3
+number=3
+pln Однако в доме [[#кот$|insert_var="кот" & goto insert]]ишка есть,
+pln Он может вполне эту [[#крыс$|insert_var="крыс" & goto insert]]у съесть,
+pln Да, да, эту [[#крыс$|insert_var="крыс" & goto insert]]у искусную,
+pln Да ту, что [[#пшениц$|insert_var="пшениц" & goto insert]]у ест вкусную,
+pln В подвале дома лежащую,
+pln У Джека весьма работящего.
+proc buttons
+end
+
+:ru_v4_4
+number=4
+pln Эта [[#собак$|insert_var="собак" & goto insert]]а живёт у Джека,
+pln [[#кот$|insert_var="кот" & goto insert]]у она враг, но друг человеку,
+pln Тому коту, что [[#крыс$|insert_var="крыс" & goto insert]]у пугает,
+pln А [[#крыс$|insert_var="крыс" & goto insert]]а с испугу [[#пшениц$|insert_var="пшениц" & goto insert]]у съедает,
+pln В подвале дома лежащую,
+pln У Джека весьма работящего.
+proc buttons
+end
+
+:ru_v4_5
+number=5
+pln Но часто бодает [[#собак$|insert_var="собак" & goto insert]]у [[#коров$|insert_var="коров" & goto insert]]а,
+pln Рогом кривым, но [[#собак$|insert_var="собак" & goto insert]]а здорова.
+pln Она продолжает трепать [[#кот$|insert_var="кот" & goto insert]]а,
+pln А [[#крыс$|insert_var="крыс" & goto insert]]а с испугу в подвале спасаясь,
+pln Одною [[#пшениц$|insert_var="пшениц" & goto insert]]ей всё время питаясь,
+pln Готова, однако, уйти навсегда
+pln От Джека, [[#коров$|insert_var="коров" & goto insert]]ы, [[#собак$|insert_var="собак" & goto insert]]и, [[#кот$|insert_var="кот" & goto insert]]а.
+proc buttons
+end
+
+:ru_v4_6
+number=6
+pln Вот юная [[#леди$|insert_var="леди" & goto insert]], совсем одинока,
+pln Доит [[#коров$|insert_var="коров" & goto insert]]у с кривым рогом,
+pln Жаль часто бодает [[#собак$|insert_var="собак" & goto insert]]у [[#коров$|insert_var="коров" & goto insert]]а,
+pln Однако [[#собак$|insert_var="собак" & goto insert]]а жива и здорова.
+pln И треплет всё крепче [[#собак$|insert_var="собак" & goto insert]]а [[#кот$|insert_var="кот" & goto insert]]а,
+pln А бедная [[#крыс$|insert_var="крыс" & goto insert]]а уйти навсегда
+pln Готова от Джека, [[#коров$|insert_var="коров" & goto insert]]ы, [[#собак$|insert_var="собак" & goto insert]]и,
+pln От [[#леди$|insert_var="леди" & goto insert]] доящей, [[#кот$|insert_var="кот" & goto insert]]а-забияки,
+pln [[#пшениц$|insert_var="пшениц" & goto insert]]ы хрустящей - еды настоящей,
+pln И даже от дома, который на век,
+pln Построил весьма работящий Джек.
+proc buttons
+end
+
+:ru_v4__check
+correct=0
+javascript="'" + пшениц + "'.toLowerCase();"
+if javascript = "пшениц" then correct = correct + 1
+javascript="'" + крыс + "'.toLowerCase();"
+if javascript = "крыс" then correct = correct + 1
+javascript="'" + кот + "'.toLowerCase();"
+if javascript = "кот" then correct = correct + 1
+javascript="'" + собак + "'.toLowerCase();"
+if javascript = "собак" then correct = correct + 1
+javascript="'" + коров + "'.toLowerCase();"
+if javascript = "коров" then correct = correct + 1
+javascript="'" + леди + "'.toLowerCase();"
+if javascript = "леди" then correct = correct + 1
+if correct = words then pln Всё верно. Это победа! & quit
+if correct = 0 then pln У вас 0 правильных вариантов. Это провал!
+if correct > 0 then javascript="window.percentageRatio(" + correct + ", " + words + ");"
+if correct > 0 then pln У вас #javascript$% правильных вариантов. Надо ещё поработать!
+current_label=label + number
+btn #current_label$, Продолжить
+end

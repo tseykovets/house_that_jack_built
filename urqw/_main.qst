@@ -10,6 +10,7 @@ btn en0, English, original
 btn ru_v1_0, Russian (<span lang="ru">Русский</span>), translated by Samuil Marshak
 btn ru_v2_0, Russian (<span lang="ru">Русский</span>), translated by Gennady Aminov
 btn ru_v3_0, Russian (<span lang="ru">Русский</span>), translated by Igor Rodin
+btn ru_v4_0, Russian (<span lang="ru">Русский</span>), translated by Svetlana Sergeeva
 btn uk0, Ukrainian (<span lang="uk">українська</span>), translated by Ivan Malkovich and Yuri Andrukhovych
 end
 
