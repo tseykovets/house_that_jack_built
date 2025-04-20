@@ -1,0 +1,246 @@
+/*
+The file encoding is UTF-8 without BOM; the newline format is LF
+This file is part of "This Is the House That Jack Built" for UrqW.
+SPDX-License-Identifier: CC0-1.0
+*/
+
+:ru_v3_0
+perkill
+urqw_game_lang="ru"
+urqw_title="Вот дом, который построил Джек"
+image="cover.jpg|Классическая иллюстрированная обложка издания 1878 года с изображением Джека с семьёй на фоне дома"
+pln Кумулятивная интерактивная литература
+pln Разработка: Никита Цейковец
+pln Иллюстрация: Рэндольф Кальдекотт 
+pln Перевод: Игорь Родин
+next="Далее"
+back="Назад"
+check="Проверить"
+insert_msg="Введите замену для "
+last=11
+words=11
+пшениц="******"
+чулане="******"
+крыс="****"
+кот="***"
+собак="*****"
+коров="*****"
+недотрог="********"
+бездельник="**********"
+священник="*********"
+петух="*****"
+крестьянин="**********"
+label=urqw_game_lang + "_v3_"
+start_label=label + 1
+btn #start_label$, #next$
+end
+
+:ru_v3_1
+number=1
+pln Вот дом,
+pln Который построил Джек.
+proc buttons
+end
+
+:ru_v3_2
+number=2
+pln А это [[#пшениц$|insert_var="пшениц" & goto insert]]а,
+pln Которая в тёмном [[#чулане$|insert_var="чулане" & goto insert]] хранится
+pln В доме,
+pln Который построил Джек.
+proc buttons
+end
+
+:ru_v3_3
+number=3
+pln А это противная толстая [[#крыс$|insert_var="крыс" & goto insert]]а
+pln С повадками старого хитрого лиса,
+pln Которая часто ворует [[#пшениц$|insert_var="пшениц" & goto insert]]у,
+pln Которая в тёмном [[#чулане$|insert_var="чулане" & goto insert]] хранится
+pln В доме,
+pln Который построил Джек.
+proc buttons
+end
+
+:ru_v3_4
+number=4
+pln Вот [[#кот$|insert_var="кот" & goto insert]]. Он ужасно собою гордится
+pln За то, что его, как пожара, боится
+pln Та самая толстая серая [[#крыс$|insert_var="крыс" & goto insert]]а
+pln С повадками старого хитрого лиса,
+pln Которая часто ворует [[#пшениц$|insert_var="пшениц" & goto insert]]у,
+pln Которая в тёмном [[#чулане$|insert_var="чулане" & goto insert]] хранится
+pln В доме,
+pln Который построил Джек.
+proc buttons
+end
+
+:ru_v3_5
+number=5
+pln А вот и [[#собак$|insert_var="собак" & goto insert]]а — сама простота,
+pln Но только вот что-то не любит [[#кот$|insert_var="кот" & goto insert]]а,
+pln Который ужасно собою гордится
+pln За то, что его, как пожара, боится
+pln Та самая толстая серая [[#крыс$|insert_var="крыс" & goto insert]]а
+pln С повадками старого хитрого лиса,
+pln Которая часто ворует [[#пшениц$|insert_var="пшениц" & goto insert]]у,
+pln Которая в тёмном [[#чулане$|insert_var="чулане" & goto insert]] хранится
+pln В доме,
+pln Который построил Джек.
+proc buttons
+end
+
+:ru_v3_6
+number=6
+pln А вот и [[#коров$|insert_var="коров" & goto insert]]а без правого рога,
+pln Она на [[#собак$|insert_var="собак" & goto insert]]у сердита немного
+pln За то, что [[#собак$|insert_var="собак" & goto insert]]а — сама простота,
+pln Но все-таки очень не любит [[#кот$|insert_var="кот" & goto insert]]а,
+pln Который ужасно собою гордится
+pln За то, что его, как пожара, боится
+pln Та самая толстая серая [[#крыс$|insert_var="крыс" & goto insert]]а
+pln С повадками старого хитрого лиса,
+pln Которая часто ворует [[#пшениц$|insert_var="пшениц" & goto insert]]у,
+pln Которая в тёмном [[#чулане$|insert_var="чулане" & goto insert]] хранится
+pln В доме,
+pln Который построил Джек.
+proc buttons
+end
+
+:ru_v3_7
+number=7
+pln А вот и девчонка идёт — [[#недотрог$|insert_var="недотрог" & goto insert]]а!
+pln Она-то и доит [[#коров$|insert_var="коров" & goto insert]]у без рога,
+pln Которая зла на [[#собак$|insert_var="собак" & goto insert]]у немного
+pln За то, что [[#собак$|insert_var="собак" & goto insert]]а — сама простота
+pln Но все-таки очень не любит [[#кот$|insert_var="кот" & goto insert]]а,
+pln Который ужасно собою гордится
+pln За то, что его, как пожара, боится
+pln Та самая толстая серая [[#крыс$|insert_var="крыс" & goto insert]]а
+pln С повадками старого хитрого лиса,
+pln Которая часто ворует [[#пшениц$|insert_var="пшениц" & goto insert]]у,
+pln Которая в тёмном [[#чулане$|insert_var="чулане" & goto insert]] хранится
+pln В доме,
+pln Который построил Джек.
+proc buttons
+end
+
+:ru_v3_8
+number=8
+pln А это пастух, лентяй и [[#бездельник$|insert_var="бездельник" & goto insert]],
+pln Который не далее как в понедельник
+pln Во ржи целовал свою [[#недотрог$|insert_var="недотрог" & goto insert]]у,
+pln Которая доит [[#коров$|insert_var="коров" & goto insert]]у без рога,
+pln Которая зла на [[#собак$|insert_var="собак" & goto insert]]у немного
+pln За то, что [[#собак$|insert_var="собак" & goto insert]]а — сама простота,
+pln Но все-таки очень не любит [[#кот$|insert_var="кот" & goto insert]]а,
+pln Который ужасно собою гордится
+pln За то, что его, как пожара, боится
+pln Та самая толстая серая [[#крыс$|insert_var="крыс" & goto insert]]а
+pln С повадками старого хитрого лиса,
+pln Которая часто ворует [[#пшениц$|insert_var="пшениц" & goto insert]]у,
+pln Которая в тёмном [[#чулане$|insert_var="чулане" & goto insert]] хранится
+pln В доме,
+pln Который построил Джек.
+proc buttons
+end
+
+:ru_v3_9
+number=9
+pln А это [[#священник$|insert_var="священник" & goto insert]], венчавший в сочельник
+pln Того пастуха, что, хотя и [[#бездельник$|insert_var="бездельник" & goto insert]],
+pln Но все же не далее как в понедельник
+pln Во ржи целовал свою [[#недотрог$|insert_var="недотрог" & goto insert]]у,
+pln Которая доит [[#коров$|insert_var="коров" & goto insert]]у без рога,
+pln Которая зла на [[#собак$|insert_var="собак" & goto insert]]у немного
+pln За то, что [[#собак$|insert_var="собак" & goto insert]]а — сама простота.
+pln Но все-таки очень не любит [[#кот$|insert_var="кот" & goto insert]]а,
+pln Который ужасно собою гордится
+pln За то, что его, как пожара, боится
+pln Та самая толстая серая [[#крыс$|insert_var="крыс" & goto insert]]а
+pln С повадками старого хитрого лиса,
+pln Которая часто ворует [[#пшениц$|insert_var="пшениц" & goto insert]]у,
+pln Которая в тёмном [[#чулане$|insert_var="чулане" & goto insert]] хранится
+pln В доме,
+pln Который построил Джек.
+proc buttons
+end
+
+:ru_v3_10
+number=10
+pln А это [[#петух$|insert_var="петух" & goto insert]]. Он песни поёт
+pln И этим [[#священник$|insert_var="священник" & goto insert]]у спать не даёт,
+pln Который венчал в позапрошлый сочельник
+pln Того пастуха, что, хотя и [[#бездельник$|insert_var="бездельник" & goto insert]],
+pln Но все же не далее как в понедельник
+pln Во ржи целовал свою [[#недотрог$|insert_var="недотрог" & goto insert]]у,
+pln Которая доит [[#коров$|insert_var="коров" & goto insert]]у без рога,
+pln Которая зла на [[#собак$|insert_var="собак" & goto insert]]у немного
+pln За то, что [[#собак$|insert_var="собак" & goto insert]]а — сама простота,
+pln Но все-таки очень не любит [[#кот$|insert_var="кот" & goto insert]]а,
+pln Который ужасно собою гордится
+pln За то, что его, как пожара, боится
+pln Та самая толстая серая [[#крыс$|insert_var="крыс" & goto insert]]а
+pln С повадками старого хитрого лиса,
+pln Которая часто ворует [[#пшениц$|insert_var="пшениц" & goto insert]]у,
+pln Которая в тёмном [[#чулане$|insert_var="чулане" & goto insert]] хранится
+pln В доме,
+pln Который построил Джек.
+proc buttons
+end
+
+:ru_v3_11
+number=11
+pln А вот и [[#крестьянин$|insert_var="крестьянин" & goto insert]], в чьём доме живёт
+pln Тот самый [[#петух$|insert_var="петух" & goto insert]], что песни поёт
+pln И этим [[#священник$|insert_var="священник" & goto insert]]у спать не даёт,
+pln Который венчал в позапрошлый сочельник
+pln Того пастуха, что, хотя и [[#бездельник$|insert_var="бездельник" & goto insert]],
+pln Но все же не далее как в понедельник
+pln Во ржи целовал свою [[#недотрог$|insert_var="недотрог" & goto insert]]у,
+pln Которая доит [[#коров$|insert_var="коров" & goto insert]]у без рога,
+pln Которая зла на [[#собак$|insert_var="собак" & goto insert]]у немного
+pln За то, что [[#собак$|insert_var="собак" & goto insert]]а — сама простота,
+pln Но все-таки очень не любит [[#кот$|insert_var="кот" & goto insert]]а,
+pln Который ужасно собою гордится
+pln За то, что его, как пожара, боится
+pln Та самая толстая серая [[#крыс$|insert_var="крыс" & goto insert]]а
+pln С повадками старого хитрого лиса,
+pln Которая часто ворует [[#пшениц$|insert_var="пшениц" & goto insert]]у,
+pln Которая в тёмном [[#чулане$|insert_var="чулане" & goto insert]] хранится
+pln В доме,
+pln Который построил Джек.
+proc buttons
+end
+
+:ru_v3__check
+correct=0
+javascript="'" + пшениц + "'.toLowerCase();"
+if javascript = "пшениц" then correct = correct + 1
+javascript="'" + чулане + "'.toLowerCase();"
+if javascript = "чулане" then correct = correct + 1
+javascript="'" + крыс + "'.toLowerCase();"
+if javascript = "крыс" then correct = correct + 1
+javascript="'" + кот + "'.toLowerCase();"
+if javascript = "кот" then correct = correct + 1
+javascript="'" + собак + "'.toLowerCase();"
+if javascript = "собак" then correct = correct + 1
+javascript="'" + коров + "'.toLowerCase();"
+if javascript = "коров" then correct = correct + 1
+javascript="'" + недотрог + "'.toLowerCase();"
+if javascript = "недотрог" then correct = correct + 1
+javascript="'" + бездельник + "'.toLowerCase();"
+if javascript = "бездельник" then correct = correct + 1
+javascript="'" + священник + "'.toLowerCase();"
+if javascript = "священник" then correct = correct + 1
+javascript="'" + петух + "'.toLowerCase();"
+if javascript = "петух" then correct = correct + 1
+javascript="'" + крестьянин + "'.toLowerCase();"
+if javascript = "крестьянин" then correct = correct + 1
+if correct = words then pln Всё верно. Это победа! & quit
+if correct = 0 then pln У вас 0 правильных вариантов. Это провал!
+if correct > 0 then javascript="window.percentageRatio(" + correct + ", " + words + ");"
+if correct > 0 then pln У вас #javascript$% правильных вариантов. Надо ещё поработать!
+current_label=label + number
+btn #current_label$, Продолжить
+end
