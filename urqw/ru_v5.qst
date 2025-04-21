@@ -1,0 +1,121 @@
+/*
+The file encoding is UTF-8 without BOM; the newline format is LF
+This file is part of "This Is the House That Jack Built" for UrqW.
+SPDX-License-Identifier: CC0-1.0
+*/
+
+:ru_v5_0
+perkill
+urqw_game_lang="ru"
+urqw_title="Дом, который построил Джек"
+image="cover.jpg|Классическая иллюстрированная обложка издания 1878 года с изображением Джека с семьёй на фоне дома"
+pln Кумулятивная интерактивная литература
+pln Разработка: Никита Цейковец
+pln Иллюстрация: Рэндольф Кальдекотт 
+pln Перевод: Екатерина Зеленина
+next="Далее"
+back="Назад"
+check="Проверить"
+insert_msg="Введите замену для "
+last=5
+words=6
+лепёшк="******"
+крыс="****"
+кот="***"
+пёс="***"
+подвал="******"
+коров="*****"
+label=urqw_game_lang + "_v5_"
+start_label=label + 1
+btn #start_label$, #next$
+end
+
+:ru_v5_1
+number=1
+pln Это злой дом, его строил Джек.
+pln Есть здесь [[#лепёшк$|insert_var="лепёшк" & goto insert]]а, [[#крыс$|insert_var="крыс" & goto insert]]а и [[#кот$|insert_var="кот" & goto insert]], [[#пёс$|insert_var="пёс" & goto insert]] и [[#коров$|insert_var="коров" & goto insert]]а.
+pln И все, кто живёт в этом не очень добром домишке,
+pln Знают, какие творились делишки.
+pln Итак, начинаю рассказ.
+pln Вся правда только сейчас, только для вас.
+proc buttons
+end
+
+:ru_v5_2
+number=2
+pln В доме [[#подвал$|insert_var="подвал" & goto insert]], в [[#подвал$|insert_var="подвал" & goto insert]]е [[#лепёшк$|insert_var="лепёшк" & goto insert]]а.
+pln [[#крыс$|insert_var="крыс" & goto insert]]а придёт и откусит немножко,
+pln Буквально кусочек от этой [[#лепёшк$|insert_var="лепёшк" & goto insert]]и, но дело не в ней.
+pln Следи за рассказом дальше скорей.
+proc buttons
+end
+
+:ru_v5_3
+number=3
+pln [[#кот$|insert_var="кот" & goto insert]]ик и [[#крыс$|insert_var="крыс" & goto insert]]ка с детства дружили,
+pln Между собой всегда всё делили.
+pln [[#кот$|insert_var="кот" & goto insert]]ику стало очень обидно –
+pln От слёз глазам ничего не видно.
+pln [[#кот$|insert_var="кот" & goto insert]]ик решил проучить эту [[#крыс$|insert_var="крыс" & goto insert]]ку.
+pln [[#крыс$|insert_var="крыс" & goto insert]]ку меж прочим, звали Лариска.
+pln Слопал он [[#крыс$|insert_var="крыс" & goto insert]]ку.
+pln [[#крыс$|insert_var="крыс" & goto insert]]ку Лариску, которая съела [[#лепёшк$|insert_var="лепёшк" & goto insert]]у в [[#подвал$|insert_var="подвал" & goto insert]]е дома.
+pln Дома, который построил Джек.
+proc buttons
+end
+
+:ru_v5_4
+number=4
+pln Следуем дальше, не отвлекайся.
+pln Ладно, хотя бы просто старайся.
+pln Сытенький [[#кот$|insert_var="кот" & goto insert]]ик на солнце лежал,
+pln Глаза чуть открыты, он явно устал.
+pln Вот показался [[#пёс$|insert_var="пёс" & goto insert]] без хвоста,
+pln Который любил трепать [[#кот$|insert_var="кот" & goto insert]]а.
+pln [[#кот$|insert_var="кот" & goto insert]] испугался и быстро встал,
+pln Запрыгнул в трубу, оттуда в [[#подвал$|insert_var="подвал" & goto insert]].
+pln В [[#подвал$|insert_var="подвал" & goto insert]], где лежала [[#лепёшк$|insert_var="лепёшк" & goto insert]]а,
+pln Которую [[#крыс$|insert_var="крыс" & goto insert]]а, ни с кем не делясь, запихала в рот,
+pln Которую затем съел обиженный [[#кот$|insert_var="кот" & goto insert]].
+proc buttons
+end
+
+:ru_v5_5
+number=5
+pln Так-с, продолжаем, однако быстрей.
+pln Стоял [[#пёс$|insert_var="пёс" & goto insert]] без хвоста, поджидая [[#кот$|insert_var=кот"" & goto insert]]а.
+pln И вдруг, откуда ни возьмись,
+pln [[#коров$|insert_var="коров" & goto insert]]а безрогая возьми-появись.
+pln И [[#пёс$|insert_var="пёс" & goto insert]] её вздумал куснуть.
+pln [[#коров$|insert_var="коров" & goto insert]]а за это решила лягнуть.
+pln Завыл от боли бесхвостый [[#пёс$|insert_var="пёс" & goto insert]],
+pln И на бегу забор чуть не снёс,
+pln И вспомнил [[#пёс$|insert_var="пёс" & goto insert]] тогда [[#кот$|insert_var="кот" & goto insert]]а,
+pln Который съел [[#крыс$|insert_var="крыс" & goto insert]]у,
+pln Которая съела [[#лепёшк$|insert_var="лепёшк" & goto insert]]у одна
+pln В тёмном [[#подвал$|insert_var="подвал" & goto insert]]е дома,
+pln Который построил Джек.
+proc buttons
+end
+
+:ru_v5__check
+correct=0
+javascript="'" + лепёшк + "'.toLowerCase();"
+if javascript = "лепёшк" or javascript = "лепешк" then correct = correct + 1
+javascript="'" + крыс + "'.toLowerCase();"
+if javascript = "крыс" then correct = correct + 1
+javascript="'" + кот + "'.toLowerCase();"
+if javascript = "кот" then correct = correct + 1
+javascript="'" + пёс + "'.toLowerCase();"
+if javascript = "пёс" or javascript = "пес" then correct = correct + 1
+javascript="'" + подвал + "'.toLowerCase();"
+if javascript = "подвал" then correct = correct + 1
+javascript="'" + коров + "'.toLowerCase();"
+if javascript = "коров" then correct = correct + 1
+if correct = words then pln Всё верно. Это победа! & quit
+if correct = 0 then pln У вас 0 правильных вариантов. Это провал!
+if correct > 0 then javascript="window.percentageRatio(" + correct + ", " + words + ");"
+if correct > 0 then pln У вас #javascript$% правильных вариантов. Надо ещё поработать!
+current_label=label + number
+btn #current_label$, Продолжить
+end
