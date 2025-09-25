@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ifindex version="1.0" xmlns="http://babel.ifarchive.org/protocol/iFiction/">
+	<story>
+		<identification>
+			<ifid>13E7A453-31A8-4EC9-8AAB-C8E98F2C8CBD</ifid>
+			<format>urqw</format>
+		</identification>
+		<bibliographic>
+			<title>This Is the House That Jack Built</title>
+			<author>Nikita Tseykovets</author>
+			<language>en</language>
+			<firstpublished>2025-03-28</firstpublished>
+			<genre>Poetry</genre>
+			<group>URQ</group>
+			<description>Cumulative interactive fiction in English, Russian and Ukrainian based on the popular English nursery rhyme of the same name.</description>
+		</bibliographic>
+		<contacts>
+			<url>https://urqw.github.io/UrqW/#house_that_jack_built</url>
+			<authoremail>tseikovets@rambler.ru</authoremail>
+		</contacts>
+		<colophon>
+			<generator>UrqW Game Template</generator>
+			<originated>2025-09-24</originated>
+		</colophon>
+	</story>
+</ifindex>
