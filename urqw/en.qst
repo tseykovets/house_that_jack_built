@@ -8,7 +8,8 @@ SPDX-License-Identifier: CC0-1.0
 perkill
 urqw_game_lang="en"
 urqw_title="This Is the House That Jack Built"
-image="cover.jpg|Classic illustrated cover of the 1878 edition featuring Jack and his family in front of a house"
+image_caption="Classic illustrated cover of the 1878 edition"
+image="cover.jpg|Jack and his family in front of a house"
 pln Cumulative interactive fiction
 pln Developed by Nikita Tseykovets
 pln Illustration by Randolph Caldecott
