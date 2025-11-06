@@ -5,7 +5,8 @@ SPDX-License-Identifier: CC0-1.0
 */
 
 :main
-image="cover.jpg|Cover of This Is the House That Jack Built"
+pln <h1>#urqw_title$</h1>
+image="cover.jpg|Jack and his family in front of a house"
 btn en0, English, original
 btn ru_v0_0, Russian (<span lang="ru">Русский</span>), translated by Samuil Marshak (1923)
 btn ru_v1_0, Russian (<span lang="ru">Русский</span>), translated by Samuil Marshak (1936)

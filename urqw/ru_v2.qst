@@ -8,6 +8,7 @@ SPDX-License-Identifier: CC0-1.0
 perkill
 urqw_game_lang="ru"
 urqw_title="Это - тот дом, где Джэк жил"
+pln <h1>#urqw_title$</h1>
 image_caption="Классическая иллюстрированная обложка издания 1878 года"
 image="cover.jpg|Джэк с семьёй на фоне дома"
 pln Кумулятивная интерактивная литература

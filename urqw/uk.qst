@@ -8,6 +8,7 @@ SPDX-License-Identifier: CC0-1.0
 perkill
 urqw_game_lang="uk"
 urqw_title="Хатка, яку збудував собі Джек"
+pln <h1>#urqw_title$</h1>
 image_caption="Класична ілюстрована обкладинка видання 1878 року"
 image="cover.jpg|Джек із сім'єю на тлі хатки"
 pln Кумулятивна інтерактивна література
