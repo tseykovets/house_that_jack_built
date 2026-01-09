@@ -15,12 +15,12 @@
 			<description>Cumulative interactive fiction in English, Russian and Ukrainian based on the popular English nursery rhyme of the same name.</description>
 		</bibliographic>
 		<contacts>
-			<url>https://urqw.github.io/UrqW/#house_that_jack_built</url>
+			<url>https://urqw.github.io/UrqW/?id=house_that_jack_built</url>
 			<authoremail>tseikovets@rambler.ru</authoremail>
 		</contacts>
 		<colophon>
 			<generator>UrqW Game Template</generator>
-			<originated>2025-09-24</originated>
+			<originated>2026-01-09</originated>
 		</colophon>
 	</story>
 </ifindex>
