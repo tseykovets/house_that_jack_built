@@ -4,7 +4,7 @@ Text-based game "This Is the House That Jack Built" by Nikita Tseykovets based o
 
 The game is in English, Russian and Ukrainian, and developed for [UrqW](https://github.com/urqw/UrqW) text-based game engine.
 
-This repository contains the source code and other resources of the game. The game is available for launch in the [UrqW engine online catalog](https://urqw.github.io/UrqW/#house_that_jack_built).
+This repository contains the source code and other resources of the game. The game is available for launch in the [UrqW engine online catalog](https://urqw.github.io/UrqW/?id=house_that_jack_built).
 
 The game was first published on March 28, 2025.
 
