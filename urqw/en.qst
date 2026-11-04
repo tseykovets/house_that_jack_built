@@ -5,7 +5,7 @@ SPDX-License-Identifier: CC0-1.0
 */
 
 :en0
-perkill
+varkill
 urqw_game_lang="en"
 urqw_title="This Is the House That Jack Built"
 pln <h1>#urqw_title$</h1>

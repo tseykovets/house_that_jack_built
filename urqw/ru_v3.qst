@@ -5,7 +5,7 @@ SPDX-License-Identifier: CC0-1.0
 */
 
 :ru_v3_0
-perkill
+varkill
 urqw_game_lang="ru"
 urqw_title="Вот дом, который построил Джек"
 pln <h1>#urqw_title$</h1>
