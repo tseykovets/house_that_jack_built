@@ -137,28 +137,18 @@ end
 
 :ru_v0__check
 correct=0
-javascript="'" + рис + "'.toLowerCase();"
-if javascript = "рис" then correct = correct + 1
-javascript="'" + крыс + "'.toLowerCase();"
-if javascript = "крыс" then correct = correct + 1
-javascript="'" + кот + "'.toLowerCase();"
-if javascript = "кот" then correct = correct + 1
-javascript="'" + пёс + "'.toLowerCase();"
-if javascript = "пёс" or javascript = "пес" then correct = correct + 1
-javascript="'" + коров + "'.toLowerCase();"
-if javascript = "коров" then correct = correct + 1
-javascript="'" + пса + "'.toLowerCase();"
-if javascript = "пса" then correct = correct + 1
-javascript="'" + девиц + "'.toLowerCase();"
-if javascript = "девиц" or javascript = "молочниц" then correct = correct + 1
-javascript="'" + пастух + "'.toLowerCase();"
-if javascript = "пастух" then correct = correct + 1
-javascript="'" + петуха + "'.toLowerCase();"
-if javascript = "петуха" then correct = correct + 1
+if StringLocaleLower(рис) = "рис" then correct += 1
+if StringLocaleLower(крыс) = "крыс" then correct += 1
+if StringLocaleLower(кот) = "кот" then correct += 1
+if StringLocaleLower(пёс) = "пёс" or StringLocaleLower(пёс) = "пес" then correct += 1
+if StringLocaleLower(коров) = "коров" then correct += 1
+if StringLocaleLower(пса) = "пса" then correct += 1
+if StringLocaleLower(девиц) = "девиц" or StringLocaleLower(девиц) = "молочниц" then correct += 1
+if StringLocaleLower(пастух) = "пастух" then correct += 1
+if StringLocaleLower(петуха) = "петуха" then correct += 1
 if correct = words then pln Всё верно. Это победа! & quit
 if correct = 0 then pln У вас 0 правильных вариантов. Это провал!
-if correct > 0 then javascript="window.percentageRatio(" + correct + ", " + words + ");"
-if correct > 0 then pln У вас #javascript$% правильных вариантов. Надо ещё поработать!
+if correct > 0 then pln У вас #PercentageRatio(correct, words)$% правильных вариантов. Надо ещё поработать!
 current_label=label + number
 btn #current_label$, Продолжить
 end

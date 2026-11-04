@@ -7,7 +7,11 @@
 $('#mute').hide();
 $('.navbar-right').hide();
 
-window.percentageRatio = function(num1, num2) {
+// Calculates the percentage ratio of two numbers.
+functions.percentageratio = function(num1, num2) {
+    if (arguments.length !== 2) {
+        throw new Error('The percentageratio() function takes 2 arguments.');
+    }
     if (num2 === 0) return 0;
     return Math.round((num1/num2)*100);
-}
+};

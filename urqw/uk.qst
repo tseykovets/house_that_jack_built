@@ -136,34 +136,21 @@ end
 
 :uk_check
 correct=0
-javascript="'" + комор + "'.toLowerCase();"
-if javascript = "комор" then correct = correct + 1
-javascript="'" + пшениц + "'.toLowerCase();"
-if javascript = "пшениц" then correct = correct + 1
-javascript="'" + синиц + "'.toLowerCase();"
-if javascript = "синиц" then correct = correct + 1
-javascript="'" + паляниц + "'.toLowerCase();"
-if javascript = "паляниц" then correct = correct + 1
-javascript="'" + кіт + "'.toLowerCase();"
-if javascript = "кіт" or javascript = "кiт" then correct = correct + 1
-javascript="'" + пес + "'.toLowerCase();"
-if javascript = "пес" then correct = correct + 1
-javascript="'" + кота + "'.toLowerCase();"
-if javascript = "кота" then correct = correct + 1
-javascript="'" + корова + "'.toLowerCase();"
-if javascript = "корова" then correct = correct + 1
-javascript="'" + пса + "'.toLowerCase();"
-if javascript = "пса" then correct = correct + 1
-javascript="'" + бабуся + "'.toLowerCase();"
-if javascript = "бабуся" then correct = correct + 1
-javascript="'" + пастух + "'.toLowerCase();"
-if javascript = "пастух" then correct = correct + 1
-javascript="'" + блоху + "'.toLowerCase();"
-if javascript = "блоху" then correct = correct + 1
+if StringLocaleLower(комор) = "комор" then correct += 1
+if StringLocaleLower(пшениц) = "пшениц" then correct += 1
+if StringLocaleLower(синиц) = "синиц" then correct += 1
+if StringLocaleLower(паляниц) = "паляниц" then correct += 1
+if StringLocaleLower(кіт) = "кіт" or StringLocaleLower(кіт) = "кiт" then correct += 1
+if StringLocaleLower(пес) = "пес" then correct += 1
+if StringLocaleLower(кота) = "кота" then correct += 1
+if StringLocaleLower(корова) = "корова" then correct += 1
+if StringLocaleLower(пса) = "пса" then correct += 1
+if StringLocaleLower(бабуся) = "бабуся" then correct += 1
+if StringLocaleLower(пастух) = "пастух" then correct += 1
+if StringLocaleLower(блоху) = "блоху" then correct += 1
 if correct = words then pln Все правильно. Це перемога! & quit
 if correct = 0 then pln У вас є 0 правильних варіантів. Це провал!
-if correct > 0 then javascript="window.percentageRatio(" + correct + ", " + words + ");"
-if correct > 0 then pln У вас є #javascript$% правильних варіантів. Потрібно ще попрацювати!
+if correct > 0 then pln У вас є #PercentageRatio(correct, words)$% правильних варіантів. Потрібно ще попрацювати!
 current_label=label + number
 btn #current_label$, Продовжити
 end

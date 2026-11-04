@@ -85,7 +85,7 @@ end
 :ru_v5_5
 number=5
 pln Так-с, продолжаем, однако быстрей.
-pln Стоял [[#пёс$|insert_var="пёс" & goto insert]] без хвоста, поджидая [[#кот$|insert_var=кот"" & goto insert]]а.
+pln Стоял [[#пёс$|insert_var="пёс" & goto insert]] без хвоста, поджидая [[#кот$|insert_var="кот" & goto insert]]а.
 pln И вдруг, откуда ни возьмись,
 pln [[#коров$|insert_var="коров" & goto insert]]а безрогая возьми-появись.
 pln И [[#пёс$|insert_var="пёс" & goto insert]] её вздумал куснуть.
@@ -102,22 +102,15 @@ end
 
 :ru_v5__check
 correct=0
-javascript="'" + лепёшк + "'.toLowerCase();"
-if javascript = "лепёшк" or javascript = "лепешк" then correct = correct + 1
-javascript="'" + крыс + "'.toLowerCase();"
-if javascript = "крыс" then correct = correct + 1
-javascript="'" + кот + "'.toLowerCase();"
-if javascript = "кот" then correct = correct + 1
-javascript="'" + пёс + "'.toLowerCase();"
-if javascript = "пёс" or javascript = "пес" then correct = correct + 1
-javascript="'" + подвал + "'.toLowerCase();"
-if javascript = "подвал" then correct = correct + 1
-javascript="'" + коров + "'.toLowerCase();"
-if javascript = "коров" then correct = correct + 1
+if StringLocaleLower(лепёшк) = "лепёшк" or StringLocaleLower(лепёшк) = "лепешк" then correct += 1
+if StringLocaleLower(крыс) = "крыс" then correct += 1
+if StringLocaleLower(кот) = "кот" then correct += 1
+if StringLocaleLower(пёс) = "пёс" or StringLocaleLower(пёс) = "пес" then correct += 1
+if StringLocaleLower(подвал) = "подвал" then correct += 1
+if StringLocaleLower(коров) = "коров" then correct += 1
 if correct = words then pln Всё верно. Это победа! & quit
 if correct = 0 then pln У вас 0 правильных вариантов. Это провал!
-if correct > 0 then javascript="window.percentageRatio(" + correct + ", " + words + ");"
-if correct > 0 then pln У вас #javascript$% правильных вариантов. Надо ещё поработать!
+if correct > 0 then pln У вас #PercentageRatio(correct, words)$% правильных вариантов. Надо ещё поработать!
 current_label=label + number
 btn #current_label$, Продолжить
 end

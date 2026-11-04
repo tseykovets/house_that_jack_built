@@ -217,32 +217,20 @@ end
 
 :ru_v3__check
 correct=0
-javascript="'" + пшениц + "'.toLowerCase();"
-if javascript = "пшениц" then correct = correct + 1
-javascript="'" + чулане + "'.toLowerCase();"
-if javascript = "чулане" then correct = correct + 1
-javascript="'" + крыс + "'.toLowerCase();"
-if javascript = "крыс" then correct = correct + 1
-javascript="'" + кот + "'.toLowerCase();"
-if javascript = "кот" then correct = correct + 1
-javascript="'" + собак + "'.toLowerCase();"
-if javascript = "собак" then correct = correct + 1
-javascript="'" + коров + "'.toLowerCase();"
-if javascript = "коров" then correct = correct + 1
-javascript="'" + недотрог + "'.toLowerCase();"
-if javascript = "недотрог" then correct = correct + 1
-javascript="'" + бездельник + "'.toLowerCase();"
-if javascript = "бездельник" then correct = correct + 1
-javascript="'" + священник + "'.toLowerCase();"
-if javascript = "священник" then correct = correct + 1
-javascript="'" + петух + "'.toLowerCase();"
-if javascript = "петух" then correct = correct + 1
-javascript="'" + крестьянин + "'.toLowerCase();"
-if javascript = "крестьянин" then correct = correct + 1
+if StringLocaleLower(пшениц) = "пшениц" then correct += 1
+if StringLocaleLower(чулане) = "чулане" then correct += 1
+if StringLocaleLower(крыс) = "крыс" then correct += 1
+if StringLocaleLower(кот) = "кот" then correct += 1
+if StringLocaleLower(собак) = "собак" then correct += 1
+if StringLocaleLower(коров) = "коров" then correct += 1
+if StringLocaleLower(недотрог) = "недотрог" then correct += 1
+if StringLocaleLower(бездельник) = "бездельник" then correct += 1
+if StringLocaleLower(священник) = "священник" then correct += 1
+if StringLocaleLower(петух) = "петух" then correct += 1
+if StringLocaleLower(крестьянин) = "крестьянин" then correct += 1
 if correct = words then pln Всё верно. Это победа! & quit
 if correct = 0 then pln У вас 0 правильных вариантов. Это провал!
-if correct > 0 then javascript="window.percentageRatio(" + correct + ", " + words + ");"
-if correct > 0 then pln У вас #javascript$% правильных вариантов. Надо ещё поработать!
+if correct > 0 then pln У вас #PercentageRatio(correct, words)$% правильных вариантов. Надо ещё поработать!
 current_label=label + number
 btn #current_label$, Продолжить
 end

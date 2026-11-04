@@ -145,30 +145,19 @@ end
 
 :ru_v1__check
 correct=0
-javascript="'" + пшениц + "'.toLowerCase();"
-if javascript = "пшениц" then correct = correct + 1
-javascript="'" + чулане + "'.toLowerCase();"
-if javascript = "чулане" then correct = correct + 1
-javascript="'" + синиц + "'.toLowerCase();"
-if javascript = "синиц" then correct = correct + 1
-javascript="'" + кот + "'.toLowerCase();"
-if javascript = "кот" then correct = correct + 1
-javascript="'" + пёс + "'.toLowerCase();"
-if javascript = "пёс" or javascript = "пес" then correct = correct + 1
-javascript="'" + коров + "'.toLowerCase();"
-if javascript = "коров" then correct = correct + 1
-javascript="'" + пса + "'.toLowerCase();"
-if javascript = "пса" then correct = correct + 1
-javascript="'" + старушк + "'.toLowerCase();"
-if javascript = "старушк" then correct = correct + 1
-javascript="'" + пастух + "'.toLowerCase();"
-if javascript = "пастух" then correct = correct + 1
-javascript="'" + петуха + "'.toLowerCase();"
-if javascript = "петуха" then correct = correct + 1
+if StringLocaleLower(пшениц) = "пшениц" then correct += 1
+if StringLocaleLower(чулане) = "чулане" then correct += 1
+if StringLocaleLower(синиц) = "синиц" then correct += 1
+if StringLocaleLower(кот) = "кот" then correct += 1
+if StringLocaleLower(пёс) = "пёс" or StringLocaleLower(пёс) = "пес" then correct += 1
+if StringLocaleLower(коров) = "коров" then correct += 1
+if StringLocaleLower(пса) = "пса" then correct += 1
+if StringLocaleLower(старушк) = "старушк" then correct += 1
+if StringLocaleLower(пастух) = "пастух" then correct += 1
+if StringLocaleLower(петуха) = "петуха" then correct += 1
 if correct = words then pln Всё верно. Это победа! & quit
 if correct = 0 then pln У вас 0 правильных вариантов. Это провал!
-if correct > 0 then javascript="window.percentageRatio(" + correct + ", " + words + ");"
-if correct > 0 then pln У вас #javascript$% правильных вариантов. Надо ещё поработать!
+if correct > 0 then pln У вас #PercentageRatio(correct, words)$% правильных вариантов. Надо ещё поработать!
 current_label=label + number
 btn #current_label$, Продолжить
 end

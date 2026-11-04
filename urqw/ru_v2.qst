@@ -180,38 +180,23 @@ end
 
 :ru_v2__check
 correct=0
-javascript="'" + зерно + "'.toLowerCase();"
-if javascript = "зерно" then correct = correct + 1
-javascript="'" + крыс + "'.toLowerCase();"
-if javascript = "крыс" then correct = correct + 1
-javascript="'" + кот + "'.toLowerCase();"
-if javascript = "кот" then correct = correct + 1
-javascript="'" + пёс + "'.toLowerCase();"
-if javascript = "пёс" or javascript = "пес" then correct = correct + 1
-javascript="'" + коров + "'.toLowerCase();"
-if javascript = "коров" then correct = correct + 1
-javascript="'" + пса + "'.toLowerCase();"
-if javascript = "пса" then correct = correct + 1
-javascript="'" + девиц + "'.toLowerCase();"
-if javascript = "девиц" then correct = correct + 1
-javascript="'" + мужчин + "'.toLowerCase();"
-if javascript = "мужчин" then correct = correct + 1
-javascript="'" + поп + "'.toLowerCase();"
-if javascript = "поп" then correct = correct + 1
-javascript="'" + петух + "'.toLowerCase();"
-if javascript = "петух" then correct = correct + 1
-javascript="'" + крестьянин + "'.toLowerCase();"
-if javascript = "крестьянин" then correct = correct + 1
-javascript="'" + цыплята + "'.toLowerCase();"
-if javascript = "цыплята" or javascript = "цыплятки" then correct = correct + 1
-javascript="'" + овечки + "'.toLowerCase();"
-if javascript = "овечки" or javascript = "овцы" then correct = correct + 1
-javascript="'" + бараны + "'.toLowerCase();"
-if javascript = "бараны" or javascript = "барашки" then correct = correct + 1
+if StringLocaleLower(зерно) = "зерно" then correct += 1
+if StringLocaleLower(крыс) = "крыс" then correct += 1
+if StringLocaleLower(кот) = "кот" then correct += 1
+if StringLocaleLower(пёс) = "пёс" or StringLocaleLower(пёс) = "пес" then correct += 1
+if StringLocaleLower(коров) = "коров" then correct += 1
+if StringLocaleLower(пса) = "пса" then correct += 1
+if StringLocaleLower(девиц) = "девиц" then correct += 1
+if StringLocaleLower(мужчин) = "мужчин" then correct += 1
+if StringLocaleLower(поп) = "поп" then correct += 1
+if StringLocaleLower(петух) = "петух" then correct += 1
+if StringLocaleLower(крестьянин) = "крестьянин" then correct += 1
+if StringLocaleLower(цыплята) = "цыплята" or StringLocaleLower(цыплята) = "цыплятки" then correct += 1
+if StringLocaleLower(овечки) = "овечки" or StringLocaleLower(овечки) = "овцы" then correct += 1
+if StringLocaleLower(бараны) = "бараны" or StringLocaleLower(бараны) = "барашки" then correct += 1
 if correct = words then pln Всё верно. Это победа! & quit
 if correct = 0 then pln У вас 0 правильных вариантов. Это провал!
-if correct > 0 then javascript="window.percentageRatio(" + correct + ", " + words + ");"
-if correct > 0 then pln У вас #javascript$% правильных вариантов. Надо ещё поработать!
+if correct > 0 then pln У вас #PercentageRatio(correct, words)$% правильных вариантов. Надо ещё поработать!
 current_label=label + number
 btn #current_label$, Продолжить
 end

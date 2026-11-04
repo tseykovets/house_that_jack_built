@@ -158,36 +158,22 @@ end
 
 :en_check
 correct = 0
-javascript="'" + malt + "'.toLowerCase();"
-if javascript = "malt" or javascript = "cheese" then correct = correct + 1
-javascript="'" + rat + "'.toLowerCase();"
-if javascript = "rat" then correct = correct + 1
-javascript="'" + cat + "'.toLowerCase();"
-if javascript = "cat" then correct = correct + 1
-javascript="'" + dog + "'.toLowerCase();"
-if javascript = "dog" then correct = correct + 1
-javascript="'" + cow + "'.toLowerCase();"
-if javascript = "cow" then correct = correct + 1
-javascript="'" + horn + "'.toLowerCase();"
-if javascript = "horn" then correct = correct + 1
-javascript="'" + maiden + "'.toLowerCase();"
-if javascript = "maiden" then correct = correct + 1
-javascript="'" + man + "'.toLowerCase();"
-if javascript = "man" then correct = correct + 1
-javascript="'" + priest + "'.toLowerCase();"
-if javascript = "priest" or javascript = "judge" then correct = correct + 1
-javascript="'" + rooster + "'.toLowerCase();"
-if javascript = "rooster" or javascript = "cock" then correct = correct + 1
-javascript="'" + farmer + "'.toLowerCase();"
-if javascript = "farmer" then correct = correct + 1
-javascript="'" + horse + "'.toLowerCase();"
-if javascript = "horse" then correct = correct + 1
-javascript="'" + hound + "'.toLowerCase();"
-if javascript = "hound" then correct = correct + 1
+if StringLocaleLower(malt) = "malt" or StringLocaleLower(malt) = "cheese" then correct += 1
+if StringLocaleLower(rat) = "rat" then correct += 1
+if StringLocaleLower(cat) = "cat" then correct += 1
+if StringLocaleLower(dog) = "dog" then correct += 1
+if StringLocaleLower(cow) = "cow" then correct += 1
+if StringLocaleLower(horn) = "horn" then correct += 1
+if StringLocaleLower(maiden) = "maiden" then correct += 1
+if StringLocaleLower(man) = "man" then correct += 1
+if StringLocaleLower(priest) = "priest" or StringLocaleLower(priest) = "judge" then correct += 1
+if StringLocaleLower(rooster) = "rooster" or StringLocaleLower(rooster) = "cock" then correct += 1
+if StringLocaleLower(farmer) = "farmer" then correct += 1
+if StringLocaleLower(horse) = "horse" then correct += 1
+if StringLocaleLower(hound) = "hound" then correct += 1
 if correct = words then pln That's right. It's a victory! & quit
 if correct = 0 then pln You have 0 correct options. This is a failure!
-if correct > 0 then javascript="window.percentageRatio(" + correct + ", " + words + ");"
-if correct > 0 then pln You have #javascript$% correct options. You still need to work!
+if correct > 0 then pln You have #PercentageRatio(correct, words)$% correct options. You still need to work!
 current_label=label + number
 btn #current_label$, Continue
 end
